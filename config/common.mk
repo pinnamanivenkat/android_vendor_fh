@@ -48,6 +48,9 @@ PRODUCT_COPY_FILES += \
     vendor/fh/prebuilt/common/priv-app/CameraNextModv7/CameraNextModv7.apk:system/priv-app/CameraNextModv7/CameraNextModv7.apk \
     vendor/fh/prebuilt/common/priv-app/CameraNextModv7/lib/arm/libjni_mosaic_next.so:system/priv-app/CameraNextModv7/lib/arm/libjni_mosaic_next.so \
     vendor/fh/prebuilt/common/priv-app/CameraNextModv7/lib/arm/libjni_tinyplanet_next.so:system/priv-app/CameraNextModv7/lib/arm/libjni_tinyplanet_next.so \
+else
+PRODUCT_PACKAGES += \
+    SnapdragonCamera
 endif
 
 # Turbo Apk
