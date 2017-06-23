@@ -42,11 +42,13 @@ PRODUCT_COPY_FILES += \
     vendor/fh/prebuilt/common/bin/50-fh.sh:system/addon.d/50-fh.sh \
     vendor/fh/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
-# FireHound Addons
+# Optional CNM app
+ifeq ($(WITH_CNM), true)
 PRODUCT_COPY_FILES += \
     vendor/fh/prebuilt/common/priv-app/CameraNextModv7/CameraNextModv7.apk:system/priv-app/CameraNextModv7/CameraNextModv7.apk \
     vendor/fh/prebuilt/common/priv-app/CameraNextModv7/lib/arm/libjni_mosaic_next.so:system/priv-app/CameraNextModv7/lib/arm/libjni_mosaic_next.so \
     vendor/fh/prebuilt/common/priv-app/CameraNextModv7/lib/arm/libjni_tinyplanet_next.so:system/priv-app/CameraNextModv7/lib/arm/libjni_tinyplanet_next.so \
+endif
 
 # Turbo Apk
 PRODUCT_COPY_FILES += \
