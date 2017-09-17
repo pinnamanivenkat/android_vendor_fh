@@ -1,4 +1,4 @@
-PRODUCT_BRAND ?= LineageOS
+PRODUCT_BRAND ?= fh
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -136,6 +136,11 @@ PRODUCT_PACKAGES += \
     Updater \
     WallpaperPicker \
     WeatherProvider
+
+# Custom FireHound packages
+PRODUCT_PACKAGES += \
+    FHWalls \
+    CameraNextMod
 
 # Exchange support
 PRODUCT_PACKAGES += \
