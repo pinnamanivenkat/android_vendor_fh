@@ -139,7 +139,6 @@ PRODUCT_PACKAGES += \
 
 # Custom FireHound packages
 PRODUCT_PACKAGES += \
-    FHWalls \
     CameraNextMod
 
 # Exchange support
